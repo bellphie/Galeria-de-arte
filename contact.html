@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Declara que el documento está basado en HTML5 -->
+
+<html lang="es">
+<!-- Indica que el idioma principal del contenido es español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 para soportar tildes y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el diseño responsivo para que se adapte a móviles y pantallas pequeñas -->
+
+    <title>Contáctanos - Galería Prisma</title>
+    <!-- Título que aparecerá en la pestaña del navegador -->
+</head>
+
+<body>
+    <!-- Contenido visual principal de la página -->
+
+    <header>
+        <!-- Encabezado principal de la página -->
+        <h1>📞 Contáctanos</h1>
+    </header>
+
+    <main>
+        <!-- Sección principal que agrupa el contenido del formulario e información de contacto -->
+
+        <!-- ===== Información de contacto general ===== -->
+        <section>
+            <!-- Contenido introductorio e información básica de contacto -->
+            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+            <p><strong>Correo electrónico:</strong> contacto@galeriaprisma.cl</p>
+            <p>¿Tienes preguntas, quieres agendar una visita guiada o estás interesado/a en exponer con nosotros?</p>
+            <p>¡Escríbenos, estaremos encantados de ayudarte!</p>
+        </section>
+
+        <!-- ===== Formulario de contacto ===== -->
+        <section>
+            <form action="/submit-contact" method="POST">
+                <!-- El formulario usa el método POST para enviar datos -->
+
+                <!-- Campo de nombre -->
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Campo de email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Campo select para tipo de solicitud -->
+                <label for="asunto">Tipo de solicitud:</label><br>
+                <select name="asunto" id="asunto" required>
+                    <option value="compra">Compra</option>
+                    <option value="venta">Venta</option>
+                    <option value="consulta">Consulta general</option>
+                </select><br><br>
+
+                <!-- Campo de mensaje -->
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <!-- Botón para enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- ===== Información de dirección física ===== -->
+        <section>
+            <h2>📍 Visítanos</h2>
+            <p><strong>Dirección:</strong> Av. Libertador Bernardo O'Higgins 1234, Concepción, Chile</p>
+            <p><strong>Horario:</strong> Lunes a Viernes de 10:00 a 18:00 hrs.</p>
+            <p>¡Te esperamos!</p>
+        </section>
+    </main>
+
+    <!-- ===== Menú de navegación común ===== -->
+    <nav>
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gallery.html">Obras destacadas</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
